@@ -14,9 +14,6 @@ class RegisterPresenter extends BasePresenter {
             ->addRule(Form::RANGE, "Musíte být plnoletý.", array(18, null));
         $form->addPassword('password', "Zadejte heslo: ")
             ->setRequired("Heslo je povinné");
-        $form->addPassword('passwordAgain', "Zadejte heslo znovu: ")
-            ->setRequired("Musíte znovu zadat své heslo.")
-            ->addRule(Form::EQUAL, "Hesla se musí shodovat.", $form['password']);
         $form->addSubmit("send", "Zaregistrovat se");
         $form->onSuccess[] = $this->registerFormSucceeded;
         return $form;
@@ -28,7 +25,7 @@ class RegisterPresenter extends BasePresenter {
     }
     
     public function renderRegistered($login) {
-        $this->template->registered = "Jste registrován jako $logiin.";
+        $this->template->registered = "Jste registrován jako $login.";
     }
 
 }
