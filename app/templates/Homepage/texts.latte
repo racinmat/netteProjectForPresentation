@@ -1,0 +1,10 @@
+{block content}
+{foreach $array as $value}
+    <div>{$value|capitalize}</div>
+    {if !$iterator->isLast()}
+        <hr>
+    {/if}
+{/foreach}
+Velikost vašich souborů je: {$size|bytes}<br/>
+Nyní je: {$time|date:'j. n. Y'}
+{/block}
