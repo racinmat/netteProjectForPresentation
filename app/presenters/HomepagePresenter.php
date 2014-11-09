@@ -18,4 +18,5 @@ class HomepagePresenter extends BasePresenter {
         $this->template->size = 123456789;
         $this->template->time = new \DateTime();
     }
+
 }

@@ -1,5 +1,5 @@
 <?php
-// source: C:\wamp\www\NettePhpProject1\app/templates/Homepage/register.latte
+// source: C:\wamp\www\NettePhpProject1\app/templates/Homepage/dafault.latte
 
 // prolog Latte\Macros\CoreMacros
 list($_b, $_g, $_l) = $template->initialize('3443671977', 'html')

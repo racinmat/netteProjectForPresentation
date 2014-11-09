@@ -2,13 +2,13 @@
 // source: C:\wamp\www\NettePhpProject1\app/templates/Register/register.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('1124831976', 'html')
+list($_b, $_g, $_l) = $template->initialize('2479748830', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block content
 //
-if (!function_exists($_b->blocks['content'][] = '_lbabfd330632_content')) { function _lbabfd330632_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
+if (!function_exists($_b->blocks['content'][] = '_lbd13b747a25_content')) { function _lbd13b747a25_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
 ;$_l->tmp = $_control->getComponent("registerForm"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ;
 }}
 

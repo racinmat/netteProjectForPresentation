@@ -2,14 +2,18 @@
 // source: C:\wamp\www\NettePhpProject1\app/templates/Homepage/default.latte
 
 // prolog Latte\Macros\CoreMacros
-list($_b, $_g, $_l) = $template->initialize('3410115870', 'html')
+list($_b, $_g, $_l) = $template->initialize('2907457151', 'html')
 ;
 // prolog Latte\Macros\BlockMacros
 //
 // block content
 //
-if (!function_exists($_b->blocks['content'][] = '_lbe9351e6a5a_content')) { function _lbe9351e6a5a_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
-;$_l->tmp = $_control->getComponent("registerForm"); if ($_l->tmp instanceof Nette\Application\UI\IRenderable) $_l->tmp->redrawControl(NULL, FALSE); $_l->tmp->render() ;
+if (!function_exists($_b->blocks['content'][] = '_lb97281dfc24_content')) { function _lb97281dfc24_content($_b, $_args) { foreach ($_args as $__k => $__v) $$__k = $__v
+?><a href="<?php echo Latte\Runtime\Filters::escapeHtml($_control->link("Register:"), ENT_COMPAT) ?>
+">formulář</a><br>
+<a href="<?php echo Latte\Runtime\Filters::escapeHtml($_control->link("Escaping:"), ENT_COMPAT) ?>
+">escapování</a><br>
+<?php
 }}
 
 //

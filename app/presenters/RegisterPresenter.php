@@ -21,11 +21,7 @@ class RegisterPresenter extends BasePresenter {
     
     public function registerFormSucceeded(Form $form) {
         $values = $form->getValues();
-        $this->redirect("registered", array("login" => $values->login));
-    }
-    
-    public function renderRegistered($login) {
-        $this->template->registered = "Jste registrován jako $login.";
+        $this->redirect("Registered:", array("login" => $values->login));
     }
 
 }
